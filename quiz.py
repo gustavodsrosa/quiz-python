@@ -184,3 +184,5 @@ elif escolha == 3:
     porcentagem_de_acerto = num_respostas_certas / qtd_perguntas * 100
 
     print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
+else:
+    print("Escolha uma das três categorias, por favor!")
