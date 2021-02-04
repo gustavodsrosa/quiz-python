@@ -11,7 +11,7 @@ print()
 escolha = int(input("Escolha uma das opções: "))
 print()
 
-if escolha == 1:
+def perguntas_faceis():
     num_respostas_certas = 0 # Contador de respostas certas
     perguntas = {
         'Pergunta 1': {
@@ -69,7 +69,7 @@ if escolha == 1:
 
     print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
 
-elif escolha == 2:
+def perguntas_medias():
     num_respostas_certas = 0  # Contador de respostas certas
     perguntas = {
         'Pergunta 1': {
@@ -127,7 +127,7 @@ elif escolha == 2:
 
     print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
 
-elif escolha == 3:
+def perguntas_dificeis():
     num_respostas_certas = 0  # Contador de respostas certas
     perguntas = {
         'Pergunta 1': {
@@ -184,5 +184,15 @@ elif escolha == 3:
     porcentagem_de_acerto = num_respostas_certas / qtd_perguntas * 100
 
     print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
+
+
+if escolha == 1:
+    perguntas_faceis() # Chamando as perguntas fáceis
+elif escolha == 2:
+    perguntas_medias() # Chamando as perguntas médias
+elif escolha == 3:
+    perguntas_dificeis() # Chamando as perguntas difíceis
 else:
     print("Escolha uma das três categorias, por favor!")
+
+
