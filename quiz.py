@@ -67,7 +67,10 @@ def perguntas_faceis():
     qtd_perguntas = len(perguntas)
     porcentagem_de_acerto = num_respostas_certas / qtd_perguntas * 100
 
-    print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
+    if porcentagem_de_acerto == 0:
+        print("RESULTADO: Que pena, você não acertou nenhuma pergunta...")
+    else:
+        print(f"RESULTADO: Você acertou {porcentagem_de_acerto}% das perguntas!")
 
 def perguntas_medias():
     num_respostas_certas = 0  # Contador de respostas certas
@@ -125,7 +128,10 @@ def perguntas_medias():
     qtd_perguntas = len(perguntas)
     porcentagem_de_acerto = num_respostas_certas / qtd_perguntas * 100
 
-    print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
+    if porcentagem_de_acerto == 0:
+        print("RESULTADO: Que pena, você não acertou nenhuma pergunta...")
+    else:
+        print(f"RESULTADO: Você acertou {porcentagem_de_acerto}% das perguntas!")
 
 def perguntas_dificeis():
     num_respostas_certas = 0  # Contador de respostas certas
@@ -180,10 +186,15 @@ def perguntas_dificeis():
     #    print('\n' * 100) - Limpar console
         print()
 
+
     qtd_perguntas = len(perguntas)
     porcentagem_de_acerto = num_respostas_certas / qtd_perguntas * 100
 
-    print(f"Você acertou {porcentagem_de_acerto}% das perguntas!")
+
+    if porcentagem_de_acerto == 0:
+        print("RESULTADO: Que pena, você não acertou nenhuma pergunta...")
+    else:
+        print(f"RESULTADO: Você acertou {porcentagem_de_acerto}% das perguntas!")
 
 
 if escolha == 1:
